@@ -5,10 +5,10 @@
 
 
 ## Release 0: Student Roster Schema
-<img src="database_schemas/img/student_roaster_schema.JPG">
+<img src="/database_schemas/img/student_roaster_schema.JPG">
 
 ## Release 1: One to Many Schema
-<img src="../database_schemas/img/one_to_many_schema.JPG">
+<img src="database_schemas/img/one_to_many_schema.JPG">
 
 
 ## Release 2: One to One Schema
