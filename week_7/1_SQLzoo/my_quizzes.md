@@ -5,7 +5,7 @@
 
 
 ### My Quiz Results:
-<img src="SQLzoo.JPG">
+<img src="img/SQLzoo.JPG">
 
 
 
