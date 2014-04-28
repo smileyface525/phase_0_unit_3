@@ -5,7 +5,7 @@
 
 
 ### My Quiz Results:
-<img src="https://github.com/smileyface525/phase_0_unit_3/blob/master/week_7/1_SQLzoo/img/1_SQLzoo.JPG">
+<img src="img/1_SQLzoo.JPG">
 
 
 
