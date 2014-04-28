@@ -5,18 +5,18 @@
 
 
 ## Release 0: Student Roster Schema
-<img src="/database_schemas/img/student_roaster_schema.JPG">
+<img src="database_schemas/img/student_roaster_schema.JPG">
 
 ## Release 1: One to Many Schema
 <img src="database_schemas/img/one_to_many_schema.JPG">
 
 
 ## Release 2: One to One Schema
-<img src="../database_schemas/img/one_to_one_schema.JPG">
+<img src="database_schemas/img/one_to_one_schema.JPG">
 
 
 ## Release 3: Many to Many Schema
-<img src="../database_schemas/img/many_to_many_schema.JPG">
+<img src="database_schemas/img/many_to_many_schema.JPG">
 
 
 ## Release 4: Design your own Schema
@@ -25,12 +25,12 @@ Description of what you're modeling:
 One to one:
 These two tables represent the relationship between a driver and hid driver's license.
 Only one license belongs to a driver and vice versa.
-<img src="../database_schemas/img/my_one_to_one_schema.JPG">
+<img src="database_schemas/img/my_one_to_one_schema.JPG">
 
 Many to many:
 Two tables represent relationshiops between movies and actors.
 A movie usually belongs to multiple actors and actor would have multile movies that belong to them.
-<img src="../database_schemas/img/my_many_to_many_schema.JPG">
+<img src="database_schemas/img/my_many_to_many_schema.JPG">
 
 ## Release 5: Reflection
 
