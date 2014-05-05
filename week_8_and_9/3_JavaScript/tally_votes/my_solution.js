@@ -1,6 +1,6 @@
 // U3.W8-9: Gradebook from Names and Scores
 
-// I worked on this challenge [by myself, with:]
+// I worked on this challenge with C.J. Jameson
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -45,7 +45,7 @@ of the respective office in voteCount.  After Alex's votes have been tallied,
 voteCount would be ...
 
   var voteCount = {
-    president: { Bob: 1 },
+    president: { Bob: 1, Zane: 3, Gary: 12 },
     vicePresident: { Devin: 1 },
     secretary: { Gail: 1 },
     treasurer: { Kerry: 1 }
@@ -64,15 +64,42 @@ var officers = {
 }
 
 // Pseudocode
-
+// as we tally every ballot (iterate through the people and positions)
+// make sure to check if someone has already received a vote; if so, add 1
+// if not, create the property in the voteCount-Position object and start it at 1
 
 // __________________________________________
 // Initial Solution
 
+var tallyVotes = function(votes) {
+  for (var voter in votes) {
+    var ballot = votes[voter];
+    for (var office in ballot) {
+      var candidate = ballot[office];
+      if (!voteCount[office][candidate]) {
+        voteCount[office][candidate] = 0;
+      } 
+      voteCount[office][candidate]++;
+    }
+  }
+}
 
+var determineWinners = function(voteCount) {
+  for (var office in voteCount) {
+      var single_office_tally = voteCount[office];
+      var winning_vote_total = 0;
+      for (var candidate in single_office_tally) {
+          var total_count = single_office_tally[candidate];
+          if (total_count > winning_vote_total) {
+            winning_vote_total = total_count;
+            officers[office] = candidate;
+          }
+      }
+  }
+}
 
-
-
+tallyVotes(votes);
+determineWinners(voteCount);
 
 
 // __________________________________________
@@ -86,9 +113,24 @@ var officers = {
 // __________________________________________
 // Reflection
 
-
-
-
+// What parts of your strategy worked? What problems did you face?
+//  Again, CJ helped me a lot!
+// What questions did you have while coding? What resources did you find to help you answer them?
+//  Scope of variables and objects inside a function. CJ and I tested ourselves by 
+//  modifying our code and figured things out.
+// What concepts are you having trouble with, or did you just figure something out? If so, what?
+//  It wasn't extremely hard but the code involved mutiple loops which confused
+//  me a lot.
+// Did you learn any new skills or tricks?
+//  How to iterate through an object by creating a variable.
+// How confident are you with each of the Learning Competencies?
+//  Because I had lots of help, not sure if I would say very confident but I 
+//  undertood everything we were supposed to do and how to solve the challenge.
+// Which parts of the challenge did you enjoy?
+//  Learning new ways to approach and tricks from CJ.
+// Which parts of the challenge did you find tedious?
+//  Just understanding exactly what each loop is doing and returning 
+//  took me some time to figure out.
 
 
 // __________________________________________
